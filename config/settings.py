@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'config',
     'modeltranslation',
     'rest_framework',
+    'drf_yasg',
     'rest_framework_simplejwt',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -134,7 +135,7 @@ LANGUAGES = (
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 MODELTRANSLATION_DEFAULT_LANGUAGE = 'uz'
 STATIC_URL = 'static/'
-
+MODELTRANSLATION_TRANSLATION_REGISTRY = 'config.translation'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
